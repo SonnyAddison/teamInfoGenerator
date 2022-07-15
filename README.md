@@ -1,1 +1,1 @@
-# teamInfoGenerator
+# Team Information Generator
