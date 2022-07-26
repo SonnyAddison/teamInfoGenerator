@@ -14,7 +14,11 @@ const managerQuestions = [
         type: "input",
         name: "id",
         message: "What is their employee ID?",
-        validate: (input) => {if (isNaN(input)) {return 'Please enter a valid ID'} else {return true}}
+        validate: (input) => {
+            if (isNaN(input)) {
+                return 'Please enter a valid ID';
+            } else {
+                return true}}
     },
     {
         type: "input",

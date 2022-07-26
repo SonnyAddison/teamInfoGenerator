@@ -3,10 +3,10 @@ const employQuestions = [
         type: "list",
         name: "role",
         message: "Select a role?",
-        choices: ["engineer", "intern"]
+        choices: ["Engineer", "Intern"]
     },
     {
-        when: (answers) => answers.role === 'engineer',
+        when: (answers) => answers.role === 'Engineer',
         type: "input",
         name: "enName",
         message: "What is your team's engieer's name?",
@@ -18,14 +18,14 @@ const employQuestions = [
         }
     },
     {
-        when: (answers) => answers.role === 'engineer',
+        when: (answers) => answers.role === 'Engineer',
         type: "input",
         name: "id",
         message: "What is their employee ID?",
         validate: (input) => {if (isNaN(input)) {return 'Please enter a valid ID'} else {return true}}
     },         
     {
-        when: (answers) => answers.role === 'engineer',
+        when: (answers) => answers.role === 'Engineer',
         type: 'input',
         name: 'github',
         message: 'What is their Github username?',
@@ -38,7 +38,7 @@ const employQuestions = [
         }        
     },
     {
-        when: (answers) => answers.role === 'engineer',
+        when: (answers) => answers.role === 'Engineer',
         type: 'input',
         name: 'enEmail',
         message: 'What is their email?',
@@ -51,7 +51,7 @@ const employQuestions = [
         }
     },
     {
-        when: (answers) => answers.role === 'intern',
+        when: (answers) => answers.role === 'Intern',
         type: "input",
         name: "enName",
         message: "What is your team's intern's name?",
@@ -63,7 +63,7 @@ const employQuestions = [
         }
     },
     {
-        when: (answers) => answers.role === 'intern',
+        when: (answers) => answers.role === 'Intern',
         type: "input",
         name: "id",
         message: "What is their employee ID?",
@@ -76,7 +76,7 @@ const employQuestions = [
         }
     },
     {
-        when: (answers) => answers.role === 'intern',
+        when: (answers) => answers.role === 'Intern',
         type: "input",
         name: "email",
         message: "What their email?",
@@ -89,7 +89,7 @@ const employQuestions = [
         }
     },
     {
-        when: (answers) => answers.role === 'intern',
+        when: (answers) => answers.role === 'Intern',
         type: "input",
         name: "school",
         message: "What is their school?",

@@ -56,15 +56,15 @@ class Employee {
     }
     enter() {
         inquirer.prompt (employQuestions).then((answers) => {
-            if (answers.role === 'engineer') {  
-                this.engineer.name = answers.enName;
+            if (answers.role === 'Engineer') {  
+                this.engineer.name = answers.name;
                 this.engineer.id = answers.id;
                 this.engineer.github = answers.github;
-                this.engineer.email = answers.enEmail;
+                this.engineer.email = answers.email;
             } else {
-                this.intern.name = answers.inName;
+                this.intern.name = answers.name;
                 this.intern.id = answers.id;
-                this.intern.email = answers.inEmail;
+                this.intern.email = answers.email;
                 this.intern.school = answers.school;
             }
         }).then(() => {
@@ -86,19 +86,17 @@ class Employee {
             console.log(err);
         });
     }        
-    quit() {
-        console.log("Goodbye!");
-        console.log("Generating your team successfully!");
-        process.exit();
+    quit(){ 
+        const html = generateHTML(this.manager, this.engineer, this.intern);
+        writeFileAsync("index.html", html);
+        console.log(this.manager, this.engineer, this.intern);
     }
 }
 
-const init = async() => {
-    try {
+const init = () => {   
         const employee = new Employee();
         employee.start();       
-        await writeFileAsync("index.html", generateHTML(employee));
-    } catch (err) {console.log(err);}
-}
+ }
 
-init ();
+
+ init ();
