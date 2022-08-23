@@ -55,7 +55,7 @@ To install, clone code from Github repository and then run npm i within the inte
   
 Open integrated Terminal in   
 
-![terminal]()  
+![terminal](./public/images/loadTerminal.jpg)  
 
 ---  
 
