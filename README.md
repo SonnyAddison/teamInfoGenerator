@@ -61,28 +61,28 @@ Open integrated Terminal in
 
 Type npm i to download node modules 
 
-![npm i]()  
+![npm i](./public/images/npmI.jpg)  
 
 ---  
 
 Run tests  
 
 
-![npm test]()  
+![npm test](./public/images/test.jpg)  
  
 
 ---  
 
 Run program  
 
-![node index]()  
+![node index](./public/images/nodeIndex.jpg)  
 
 --- 
 
 
 Answer Questions 
 
-![answer questions]().jpg  
+![answer questions](./public/images/answerQuestions.jpg) 
 
 --- 
 Video Tutorial:  
