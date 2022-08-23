@@ -85,15 +85,10 @@ Answer Questions
 ![answer questions](./public/images/answerQuestions.jpg) 
 
 --- 
-Video Tutorial:  
+Video Tutorial:  https://drive.google.com/file/d/11EL1kVP_cOYXZuRYZMbNX9pn5WWRoe5N/view
 
 
-
-
-
-
-
-GitHub link: 
+GitHub link: https://sonnyaddison.github.io/teamInfoGenerator/
 
 
 
