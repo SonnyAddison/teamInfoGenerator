@@ -2,9 +2,9 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const utils = require("util");
-const generateHTML = require("./assets/utils/generateHTML");
-const managerQuestions = require("./assets/utils/managerQuestions");
-const employQuestions = require("./assets/utils/employeeQuestions");
+const generateHTML = require("./public/util/generateHTML");
+const managerQuestions = require("./public/util/managerQuestions");
+const employQuestions = require("./public/util/employeeQuestions");
 
 const writeFileAsync = utils.promisify(fs.writeFile);
 
@@ -98,5 +98,4 @@ const init = () => {
         employee.start();       
  }
 
-
- init ();
+init ();
